@@ -129,3 +129,83 @@ html,body{
 #over2 img{
     height: 2.5vw;
 }
+
+#scroll{
+    height: 40vh;
+    width: 100%;
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#scroll .container{
+    height: 100%;
+    width: 120%;
+    display: inline-block;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+}
+
+#scroll img{
+    /* display: none; */
+    height: 92%;
+    width: 15%;
+    margin: 1vw;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 10%;
+
+}
+
+@keyframes anime{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabets{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-top: 5vw;
+}
+
+#alphabets h5{
+    font-size: 1.5vw;
+    font-style: italic;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    letter-spacing: 4px;
+    margin-right: 20px;
+}
+#alphabets h6{
+    font-size: 1vw;
+    font-style: italic;
+    font-weight: 500;
+    padding: 0.6vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#alphabets h6:hover{
+        border: 1px solid rgb(0, 0, 0);
+
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+}
