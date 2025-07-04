@@ -10,10 +10,14 @@ html,body{
     width: 100%;
 }
 
+body{
+    /* background-color: rgb(250, 244, 236); */
+    background: linear-gradient(to left , rgb(255, 214, 172), rgb(241, 235, 228)  );
+}
+
 #main{
     height: 100%;
     width: 100%;
-    /* background-color: antiquewhite; */
     padding-top: 0.5px;
 }
 
@@ -264,4 +268,80 @@ html,body{
     font-size: 16px;
     font-weight: 500;
     /* text-align: left; */
+}
+
+#page3{
+    height: 100%;
+    width: 100%;
+    padding: 3vw 6vw;
+
+}
+
+#page3>h1{
+    font-size: 3.5em;
+    text-align: center;
+    font-family: Monument;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 8vh;
+}
+
+
+.elem{
+    /* background-color: red; */
+    width: 100%;
+    height: 16vh;
+    border-top: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 3vw;
+    position: relative;
+}
+
+.elem h4{
+    text-transform: uppercase;
+    width: 5%;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.elem #elem-part2{
+    width: 50%;
+    /* background-color: red; */
+}
+
+.elem #elem-part2 h1{
+    font-size: 3em;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+
+.elem #elem-part2 h5{
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.elem img{
+    height: 140px;
+    width: 140px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 50%;
+    left: 20%;
+    opacity: 0;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+.elem img:hover{
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+}
+
+
+
+.elem:nth-last-child(1){
+    border-bottom: 2px solid black;
 }
